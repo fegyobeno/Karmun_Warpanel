@@ -95,7 +95,7 @@ if (isset($_POST['stage1']))
         die("Connection failed: " . mysqli_connect_error());
       }
 
-$command = mysqli_query($connection,"UPDATE War SET Completed=1 WHERE Construction='Assembling the vacum chamber';");
+$command = mysqli_query($connection,"UPDATE War SET Completed=1 WHERE Construction='Assembling the vacuum chamber';");
     if (!$command) {
         die("Query failed: " .mysql_error() );
       }
@@ -116,7 +116,7 @@ if (isset($_POST['stage2']))
         die("Connection failed: " . mysqli_connect_error());
       }
 
-$command = mysqli_query($connection,"UPDATE War SET Completed=1 WHERE Construction='Preparing a high vacum pump';");
+$command = mysqli_query($connection,"UPDATE War SET Completed=1 WHERE Construction='Preparing a high pressure vacuum pump';");
     if (!$command) {
         die("Query failed: " .mysql_error() );
       }
@@ -158,7 +158,7 @@ if (isset($_POST['stage4']))
         die("Connection failed: " . mysqli_connect_error());
       }
 
-$command = mysqli_query($connection,"UPDATE War SET Completed=1 WHERE Construction='Preparing a high vacum pump';");
+$command = mysqli_query($connection,"UPDATE War SET Completed=1 WHERE Construction='Assembling the Deuterium system';");
     if (!$command) {
         die("Query failed: " .mysql_error() );
       }
@@ -179,7 +179,7 @@ if (isset($_POST['stage5']))
         die("Connection failed: " . mysqli_connect_error());
       }
 
-$command = mysqli_query($connection,"UPDATE War SET Completed=1 WHERE Construction='Assembling the Deuterium system ';");
+$command = mysqli_query($connection,"UPDATE War SET Completed=1 WHERE Construction='Connencting to high voltage';");
     if (!$command) {
         die("Query failed: " .mysql_error() );
       }
@@ -200,7 +200,7 @@ if (isset($_POST['stage6']))
         die("Connection failed: " . mysqli_connect_error());
       }
 
-$command = mysqli_query($connection,"UPDATE War SET Completed=1 WHERE Construction='Connencting to high voltage';");
+$command = mysqli_query($connection,"UPDATE War SET Completed=1 WHERE Construction='Setting up neutron detection';");
     if (!$command) {
         die("Query failed: " .mysql_error() );
       }
@@ -221,7 +221,7 @@ if (isset($_POST['stage7']))
         die("Connection failed: " . mysqli_connect_error());
       }
 
-$command = mysqli_query($connection,"UPDATE War SET Completed=1 WHERE Construction='Setting up neutron detection';");
+$command = mysqli_query($connection,"UPDATE War SET Completed=1 WHERE Construction='Firing up';");
     if (!$command) {
         die("Query failed: " .mysql_error() );
       }
